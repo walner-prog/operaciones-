@@ -1,0 +1,75 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>juego de suma numeros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0,minimum-scale1.0">
+    <link rel="shortcut icon" href="fotos/logo.png" tipe="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <link href="slider.css" rel="stylesheet">
+    <link href="fotos/stilo.css" rel="stylesheet">
+    <link href="menu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(function() {
+            $("body").hide().fadeIn(3000);
+
+        })
+    </script>
+</head>
+
+<body>
+    <!--navegador desplegable-->
+
+    <header class="Tituloosm">
+        <div class="barra">
+            <h2>Menu<img src="lista_icono.png" alt=""></h2>
+
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="juego de op.html">SUMA</a></li>
+                <li><a href="juego de op2.html">RESTA</a></li>
+                <li id=ultimoelemento><a href="juego de op3.html">PRODUCTO</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <!--juego sumar numeros aleatoeios-->
+    <button class="titulo"><h1>Juego de suma</h1></button>
+    <hr>
+    <div class="container">
+        <div class="isquierdo">
+            <div class="con_operacion">
+                <span id="suma" class="suma"><i>9+9</i> =</span>
+                <span class="resultado" id="resultado">18</span>
+            </div>
+            <span id="msj" class="msj">Exelente</span>
+        </div>
+        <div class="derecha">
+            <span id="op1" class="opcion" onclick="controlar_respuesta(this)">18</span>
+            <span id="op2" class="opcion" onclick="controlar_respuesta(this)">18</span>
+            <span id="op3" class="opcion" onclick="controlar_respuesta(this)">18</span>
+        </div>
+
+    </div>
+
+
+    <div class="slider">
+        <ul>
+            <li class="imagen"><img src="fotos/1.jpg" alt=""></li>
+            <li class="imagen"><img src="fotos/2.png" alt=""></li>
+            <li class="imagen"><img src="fotos/3.jpg" alt=""></li>
+            <li class="imagen"><img src="fotos/4.png" alt=""></li>
+        </ul>
+    </div>
+    <button class="boton"><a href="juego de op2.html">clip aqui si quieres ir al juego de la resta de #</a></button>
+    <button class="boton"><a href="juego de op3.html">clip aqui para jugar asertar con la multiplicacionde #</a></button>
+    <script src="script.js"></script>
+    <script src="scriptslide.js"></script>
+</body>
+
+</html>
